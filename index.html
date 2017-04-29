@@ -50,18 +50,18 @@
             </form>
           </div> <!-- end of new userform -->
           <div id="transaction">
-            <h2>Hello <span class="name"></span></h2>
-            <h3>Your Current Balance: Ksh.</h3>
+            <h2>Hello <span class="name"></span>!!</h2>
+            <h3>Your Current Balance: Ksh. <span class="bal"></span>/=</h3>
             <h4>What do you want to do today?</h4>
             <form class="form-horizontal" action="index.html" method="post">
               <div class="form-group">
                 <label for="transaction" class=" col-sm-4 control-label">Transaction:</label>
                 <div class=" col-sm-6">
                     <div class="radio radio-inline">
-                      <label><input type="radio" name="transaction" value="deposit" checked="checked">Deposit</label>
+                      <label><input type="radio" name="transaction" value="1" checked="checked">Deposit</label>
                     </div>
                     <div class="radio radio-inline">
-                      <label><input type="radio" name="transaction" value="withdraw">Withdraw</label>
+                      <label><input type="radio" name="transaction" value="2">Withdraw</label>
                     </div>
                   </div>
                 </div>
@@ -80,32 +80,18 @@
           </div>
           <!-- End of transaction form -->
           <div id="message">
-            <div class="output">
+            <h3>Dear, <span class="name"></span></h3>
+            <h4><span class="msg"></span></h4>
+            <h3>Your Current Balance: Ksh. <span class="bal"></span>/=</h3>
 
-            </div>
+            <h6 id="back">Back</h6>
           </div>
         </div>
         <div class="col-md-2">
 
         </div>
-
       </div>
-      <div class="row">
-
-        <div class="col-md-6" class="results">
-              <h4>Results</h4>
-            <img src="" alt="" id="tri" class="img-responsive" id="images">
-            <div class="output">
-            </div>
-         </div>
       </div>
-        <div class="footer">
-          <h3>By Mulu Kadan</h3>
-
-        </div>
-      </div>
-
     </div>
-
   </body>
 </html>

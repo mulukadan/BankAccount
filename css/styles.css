@@ -18,6 +18,13 @@
 input{
   text-align: right;
 }
-#newuser{
+#message{
   display: none;
+}
+#transaction{
+  display: none;
+}
+#back:hover{
+  cursor:pointer;
+  color: red;
 }
