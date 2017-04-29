@@ -21,32 +21,69 @@
         <div class="col-md-8 header">
           <h2>Welcome to Moringa Bank</h2>
           <hr width="85%">
-          <h3>Create New Account</h3>
-          <form class="form-horizontal" action="index.html" method="post">
-            <div class="form-group">
-              <label for="name" class="control-label col-sm-4">Name:</label>
-              <div class="col-sm-6">
-                <input type="text" id="name" value="" class="form-control" placeholder="Enter Name">
+          <div id="newuser">
+            <h3>Create New Account</h3>
+            <form class="form-horizontal" action="index.html" method="post">
+              <div class="form-group">
+                <label for="name" class="control-label col-sm-4">Name:</label>
+                <div class="col-sm-6">
+                  <input type="text" id="name" value="" class="form-control" placeholder="Enter Name">
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="pin" class="control-label col-sm-4">Pin:</label>
-              <div class="col-sm-6">
-                <input type="password" id="pin" value="" class="form-control" placeholder="****">
+              <div class="form-group">
+                <label for="pin" class="control-label col-sm-4">Pin:</label>
+                <div class="col-sm-6">
+                  <input type="password" id="pin" value="" class="form-control" placeholder="****">
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="initialbal" class="control-label col-sm-4">Initial Deposit:</label>
-              <div class="col-sm-6">
-                <input type="number" id="initialbal" value="" class="form-control" placeholder="Ksh. 0.00">
+              <div class="form-group">
+                <label for="initialbal" class="control-label col-sm-4">Initial Deposit:</label>
+                <div class="col-sm-6">
+                  <input type="number" id="initialbal" value="" class="form-control" placeholder="Ksh. 0.00">
+                </div>
               </div>
+              <div class="form-group">
+               <div class="col-sm-offset-6 col-sm-6">
+                 <button type="submit" class="btn btn-default">Create</button>
+               </div>
+              </div>
+            </form>
+          </div> <!-- end of new userform -->
+          <div id="transaction">
+            <h2>Hello <span class="name"></span></h2>
+            <h3>Your Current Balance: Ksh.</h3>
+            <h4>What do you want to do today?</h4>
+            <form class="form-horizontal" action="index.html" method="post">
+              <div class="form-group">
+                <label for="transaction" class=" col-sm-4 control-label">Transaction:</label>
+                <div class=" col-sm-6">
+                    <div class="radio radio-inline">
+                      <label><input type="radio" name="transaction" value="deposit" checked="checked">Deposit</label>
+                    </div>
+                    <div class="radio radio-inline">
+                      <label><input type="radio" name="transaction" value="withdraw">Withdraw</label>
+                    </div>
+                  </div>
+                </div>
+					    <div class="form-group">
+                <label for="amount" class="control-label col-sm-4">Amount(Ksh.)</label>
+                <div class="col-sm-6">
+                  <input type="number" id="amount" value="" class="form-control" placeholder="0.00">
+                </div>
+              </div>
+					    <div class="form-group">
+                <div class="col-sm-offset-6 col-sm-6">
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+              </div>
+           </form>
+          </div>
+          <!-- End of transaction form -->
+          <div id="message">
+            <div class="output">
+
             </div>
-            <div class="form-group">
-             <div class="col-sm-offset-6 col-sm-6">
-               <button type="submit" class="btn btn-default">Create</button>
-             </div>
-            </div>
-          </form>
+          </div>
         </div>
         <div class="col-md-2">
 
@@ -54,7 +91,7 @@
 
       </div>
       <div class="row">
-      
+
         <div class="col-md-6" class="results">
               <h4>Results</h4>
             <img src="" alt="" id="tri" class="img-responsive" id="images">
