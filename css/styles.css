@@ -15,12 +15,6 @@
   background-position: center;
   background-color: black;
 }
-#images{
-float: right;
-margin-left: 40%;
-}
-.footer {
-  position: absolute;
-  bottom: 2px;
- left: 40%;
+input{
+  text-align: right;
 }

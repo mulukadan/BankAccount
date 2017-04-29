@@ -21,6 +21,32 @@
         <div class="col-md-8 header">
           <h2>Welcome to Moringa Bank</h2>
           <hr width="85%">
+          <h3>Create New Account</h3>
+          <form class="form-horizontal" action="index.html" method="post">
+            <div class="form-group">
+              <label for="name" class="control-label col-sm-4">Name:</label>
+              <div class="col-sm-6">
+                <input type="text" id="name" value="" class="form-control" placeholder="Enter Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pin" class="control-label col-sm-4">Pin:</label>
+              <div class="col-sm-6">
+                <input type="password" id="pin" value="" class="form-control" placeholder="****">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="initialbal" class="control-label col-sm-4">Initial Deposit:</label>
+              <div class="col-sm-6">
+                <input type="number" id="initialbal" value="" class="form-control" placeholder="Ksh. 0.00">
+              </div>
+            </div>
+            <div class="form-group">
+             <div class="col-sm-offset-6 col-sm-6">
+               <button type="submit" class="btn btn-default">Create</button>
+             </div>
+            </div>
+          </form>
         </div>
         <div class="col-md-2">
 
@@ -28,38 +54,7 @@
 
       </div>
       <div class="row">
-        <img src="img/logo.png" alt="" >
-        <div class="col-md-6">
-
-              <!-- <h2>Triangle Tracker</h2> -->
-
-
-            <form class="form-horizontal" action="index.html" method="post">
-              <div class="form-group">
-                <label for="sidea" class="control-label col-sm-8">Side A length</label>
-                <div class="col-sm-4">
-                  <input type="number" id="sidea" value="" class="form-control" placeholder="0">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="sideb" class="control-label col-sm-8">Side B length</label>
-                <div class="col-sm-4">
-                  <input type="number" id="sideb" value="" class="form-control" placeholder="0">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="sidec" class="control-label col-sm-8">Side C length</label>
-                <div class="col-sm-4">
-                  <input type="number" id="sidec" value="" class="form-control" placeholder="0">
-                </div>
-              </div>
-              <div class="form-group">
-               <div class="col-sm-offset-6 col-sm-6">
-                 <button type="submit" class="btn btn-default">Check</button>
-               </div>
-              </div>
-            </form>
-        </div>
+      
         <div class="col-md-6" class="results">
               <h4>Results</h4>
             <img src="" alt="" id="tri" class="img-responsive" id="images">
