@@ -1,0 +1,26 @@
+*{
+  color: white;
+}
+.header{
+  text-align: center;
+}
+
+.jumbotron{
+  height: 600px;
+  padding-top: 100px;
+  margin-top: 10px;
+  border-radius: 50px;
+  background-image: url("../img/scrn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+#images{
+float: right;
+margin-left: 40%;
+}
+.footer {
+  position: absolute;
+  bottom: 2px;
+ left: 40%;
+}
