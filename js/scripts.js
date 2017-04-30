@@ -1,15 +1,27 @@
 $(document).ready(function() {
-  var name;
-  var accbal;
-  var pin;
+  // var name;
+  // var accbal;
+  // var pin;
+  // var account = {
+  //   name: "",
+  //   accbal: "0",
+  //   pin: ""
+  // };
+  function account(name, pin, accbal) {
+    this.name = name;
+    this.pin = pin;
+    this.accbal = accbal;
+  }
 
       $("#newuser form").submit(function(event) {
         name = $("input#name").val();
         pin  = $("input#pin").val();
         accbal = parseInt($("input#initialbal").val());
 
-        $(".name").text(name);
-        $(".bal").text(accbal);
+        var newAccount = new account(name, pin, accbal);
+
+        $(".name").text(newAccount.name);
+        $(".bal").text(newAccount.accbal);
 
         $(".btns").show();
         $("#transaction").show();
@@ -88,7 +100,7 @@ $(document).ready(function() {
         $("#newuser").hide();
         $("#login").hide();
         $("#logout").show();
-        $(".btns").hide();      
+        $(".btns").hide();
 
         $(".bye").delay("slow").fadeIn();
         $(".bye").delay("slow").fadeOut();
