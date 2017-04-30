@@ -52,11 +52,11 @@
             </form>
           </div> <!-- end of new userform -->
           <div id="transaction">
-            <h2>Hello <span class="name"></span>!!</h2>
+            <h3>Hello <span class="name"></span>!!</h3>
             <h3>Your Current Balance: Ksh. <span class="bal"></span>/=</h3>
             <h4>What do you want to do today?</h4>
             <form class="form-horizontal" action="index.html" method="post">
-              <div class="form-group">
+              <div class="form-group"><h4>
                 <label for="transaction" class=" col-sm-4 control-label">Transaction:</label>
                 <div class=" col-sm-6">
                     <div class="radio radio-inline">
@@ -65,10 +65,10 @@
                     <div class="radio radio-inline">
                       <label><input type="radio" name="transaction" value="2">Withdraw</label>
                     </div>
-                  </div>
+                  </div></h4>
                 </div>
 					    <div class="form-group">
-                <label for="amount" class="control-label col-sm-4">Amount(Ksh.)</label>
+                <label for="amount" class="control-label col-sm-4"><h4>Amount(Ksh.)</h4></label>
                 <div class="col-sm-6">
                   <input type="number" id="amount" value="" class="form-control" placeholder="0.00">
                 </div>
@@ -112,8 +112,8 @@
         </div>
         <div class="bye">
           <h1>Thank you</h1>
-          <span class="name"></span>
-          <h1>Bye Bye</h1>
+          <h3><span class="name"></span></h3>
+          <h2>Bye Bye</h2>
         </div>
         <div class="btns fixed-bottom">
           <button type="button" class="btn btn-info btn-sm" id="logout">
