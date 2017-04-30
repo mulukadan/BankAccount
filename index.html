@@ -19,7 +19,9 @@
 
         </div>
         <div class="col-md-8 header">
-          <h2>Welcome to Moringa Bank</h2>
+          <div class="scroll-left">
+           <h2>Welcome to Moringa Bank:..24/7 Banking..</h2>
+          </div>
           <hr width="85%">
           <div id="newuser">
             <h3>Create New Account</h3>
@@ -83,9 +85,43 @@
             <h3>Dear, <span class="name"></span></h3>
             <h4><span class="msg"></span></h4>
             <h3>Your Current Balance: Ksh. <span class="bal"></span>/=</h3>
-
-            <h6 id="back">Back</h6>
+            <br><br>
+            <h5 id="back">Back</h5>
           </div>
+          <div id="login">
+            <h3>You are logged in as: <span class="name"></span></h3>
+            <form class="form-horizontal" action="index.html" method="post">
+              <div class="form-group">
+
+					    <div class="form-group">
+                <label for="amount" class="control-label col-sm-4">PIN</label>
+                <div class="col-sm-6">
+                  <input type="password" id="logpin" value="" class="form-control" placeholder="****">
+                </div>
+              </div>
+					    <div class="form-group">
+                <div class="col-sm-offset-6 col-sm-6">
+                  <button type="submit" class="btn btn-success">Login</button>
+                </div>
+              </div>
+           </form>
+            <div class="wrongpin">
+
+            </div>
+          </div>
+        </div>
+        <div class="bye">
+          <h1>Thank you</h1>
+          <span class="name"></span>
+          <h1>Bye Bye</h1>
+        </div>
+        <div class="btns fixed-bottom">
+          <button type="button" class="btn btn-info btn-sm" id="logout">
+            <span class="glyphicon glyphicon-log-out"></span> Log out
+          </button>
+          <button type="button" class="btn btn-danger btn-sm" id="off">
+            <span class="glyphicon glyphicon-off"></span> Off
+          </button>
         </div>
         <div class="col-md-2">
 

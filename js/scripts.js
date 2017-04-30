@@ -11,6 +11,7 @@ $(document).ready(function() {
         $(".name").text(name);
         $(".bal").text(accbal);
 
+        $(".btns").show();
         $("#transaction").show();
         $("#newuser").hide();
 
@@ -52,6 +53,53 @@ $(document).ready(function() {
         $("#message").hide();
         $("#transaction").show();
         $("#newuser").hide();
+
+        event.preventDefault();
+      });
+
+      $("#logout").click(function(event) {
+        $("#message").hide();
+        $("#transaction").hide();
+        $("#newuser").hide();
+        $("#login").show();
+        $("#logout").hide();
+        $(".wrongpin").text("");
+        $("input#logpin").val("");
+        event.preventDefault();
+      });
+
+      $("#login form").submit(function(event) {
+        var enteredpin  = $("input#logpin").val();
+
+        if (enteredpin === pin) {
+          $("#transaction").show();
+          $("#logout").show();
+          $("#login").hide();
+        } else {
+              $(".wrongpin").text("Wrong Pin!!");
+        }
+
+        event.preventDefault();
+      });
+
+      $("#off").click(function(event) {
+        $("#message").hide();
+        $("#transaction").hide();
+        $("#newuser").hide();
+        $("#login").hide();
+        $("#logout").show();
+        $(".btns").hide();      
+
+        $(".bye").delay("slow").fadeIn();
+        $(".bye").delay("slow").fadeOut();
+        $(".bye").delay("slow").fadeIn();
+        $(".bye").delay("slow").fadeOut();
+        $("input#name").val("");
+        $("input#pin").val("");
+        $("input#initialbal").val("");
+
+       $("#newuser").delay(4200).fadeIn();
+
 
         event.preventDefault();
       });
